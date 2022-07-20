@@ -7,6 +7,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[contenthash].js',
+		assetModuleFilename: 'assets/[name].[hash].[ext]',
 		clean: true,
 	},
 
@@ -37,6 +38,10 @@ module.exports = {
 			loader: 'html-loader',
 		},
 		{
+			test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+			type: 'asset',			
+		},
+		{
 			test: /\.(sa|sc|c)ss$/,
 			use: [
 				MiniCssExtractPlugin.loader,
@@ -44,6 +49,8 @@ module.exports = {
 					loader: 'css-loader',
 					options: {
 						sourceMap: true,
+						modules: true,
+
 					},
 				},
 				{
