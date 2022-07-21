@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Carditems from './components/Carditems';
 import Listitems from './components/Listitems';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -32,12 +32,13 @@ function App() {
 		{ id: 14, image: mitsubishi, model: 'Mitsubishi Outlander NEW Active Plus', year: '2022', brand: 'Mitsubishi', color: 'Серебристо-зелёный', mileage: '225 500 км', engine: { volume: '2.0 л', power: '146 лс', type: 'бензин' }, transmission: 'Автоматическая', price: '3 317 000' },
 		{ id: 15, image: hundai, model: 'Hyundai Solaris NEW Active Plus', year: '2013', brand: 'Hyundai', color: 'Серебристо-зелёный', mileage: '160 500 км', engine: { volume: '1.6 л', power: '101 лс', type: 'бензин' }, transmission: 'Автоматическая', price: '746 150' },
 		{ id: 16, image: audi, model: 'Audi A3 Sedan NEW Active PlusT', year: '2020', brand: 'Audi', color: 'Серебристо-зелёный', mileage: '160 500 км', engine: { volume: '1.4 л', power: '150 лс', type: 'бензин' }, transmission: 'Автоматическая', price: '1 999 000' },
-		{ id: 17, image: hundai, model: 'Mitsubishi Outlander NEW Active Plus', year: '2022', brand: 'Mitsubishi', color: 'Зелёный', mileage: '225 500 км', engine: { volume: '2.0 л', power: '146 лс', type: 'бензин' }, transmission: 'Автоматическая', price: '3 317 000' },
+		{ id: 17, image: mitsubishi, model: 'Mitsubishi Outlander NEW Active Plus', year: '2022', brand: 'Mitsubishi', color: 'Зелёный', mileage: '225 500 км', engine: { volume: '2.0 л', power: '146 лс', type: 'бензин' }, transmission: 'Автоматическая', price: '3 317 000' },
 	]);
 	const [error, setError] = useState(null);
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [model, setModel] = useState([]);
-	const [selectSort, setSelcetSort] = useState(' ');
+	const [c, setC] = useState(cars);
+	const [selectedFilter, setSelectedFilter] = useState('');
 
 
 	useEffect(() => {
@@ -55,14 +56,21 @@ function App() {
 			)
 	}, [])
 
-	const sortCars = (sort) =>{
-		setSelcetSort(sort);
-		console.log(sort);
-		setCars([...cars].sort((a, b) => a.brand[sort].localeCompare(b.brand[sort])));
-		console.log(cars)
+	const filters = useMemo(() => {
+		if (selectedFilter){
+			return [...cars].filter((i) => i.brand === selectedFilter)
+		} else {
+		return cars
+	}
+	}, [selectedFilter, cars])
+
+	const stateFilter = (filter) => {
+		setSelectedFilter(filter);
+		console.log(filter);
 	}
 
-	
+
+
 
 	if (!isLoaded) {
 		return <p>Loading...</p>
@@ -74,19 +82,16 @@ function App() {
 					<Row >
 						<Col>
 							<Listitems
-								value={selectSort}
-								onChange={sortCars}
+								value={selectedFilter}
+								onChange={stateFilter}
 								erorrs={error}
-								op = {[
-									{title: "brand"}
-								]}
 								options={model}
 							/>
 						</Col>
 					</Row>
 					<Row>
-						{cars.map((car) =>
-							<Col md={4} key={car.id}>
+						{filters.map((car) =>
+							<Col xl={4} key={car.id}>
 								<Carditems car={car} />
 							</Col>
 						)}

@@ -4,28 +4,26 @@ import style from './stylemodule/list.module.sass'
 
 
 
-function Listitems({ erorrs, options, value, onChange, op }) {	
+function Listitems({ erorrs, options, value, onChange }) {
 
-	if (erorrs){
+	if (erorrs) {
 		return <p>Error</p>
-	} else{
+	} else {
 		return (
-			<select className={style.select} 
-				value = {value}
-				onChange = {e => onChange(e.target.value)}
+			<select className={style.select}
+				value={value}
+				onChange={e => onChange(e.target.value)}
 			>
 				<option disabled value="">Марка</option>
-				{options.map((models) => 
-				<option className={style.option} key={models} value={op.title}>
-					{models}
-				</option>
+				<option value="">Все</option>
+				{options.map((models) =>
+					<option className={style.option} key={models} value={models}>
+						{models}
+					</option>
 				)}
 			</select>
 		)
 	}
-
-
-
 }
 
 export default Listitems;
