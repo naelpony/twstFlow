@@ -1,9 +1,127 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/components/Card/card.module.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/components/stylemodule/card.module.sass ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  font-size: 20px;
+}
 
+.LpMtCNQrwwf97KvZGePg {
+  margin: 0 0 1.313rem 0;
+}
+
+.bGuDinYaZ1Zfc3rKmW5T {
+  font-family: "Roboto", sans-serif;
+  padding: 2.25rem 1.313rem 1.563rem 1.313rem;
+  box-shadow: 0px 6px 32px rgba(14, 42, 96, 0.1607843137);
+}
+
+.bu3VwXcFJJvCukPI4ls9 {
+  width: 75%;
+  height: 190px;
+  object-fit: fill;
+  border-radius: 4px;
+}
+
+.zGn40mkSsLBHDzvDzhkU {
+  display: flex;
+  align-items: center;
+}
+
+.w5PhjuJDJe4CeJuUnNZa {
+  font-size: 0.938rem;
+  color: #303030;
+}
+
+.KMDr3iQMjGqtmvNan_62 {
+  padding: 0 0 0 0.25rem;
+  font-size: 0.625rem;
+  color: #22BF86;
+}
+
+._A4jij0ODFW63PjJdBq2 {
+  margin: 0;
+  padding: 0.25rem 0 0.95rem 0;
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  color: #707B8C;
+}
+
+.hO5jqpBgVYv9S0esuAVI {
+  padding: 0.938rem 0 1.95rem 0;
+}
+
+.dr7RYjE2UcH_XrjUZUeJ {
+  display: flex;
+}
+
+.uymr1nAZm5RTqQAogPQB {
+  padding: 0 1.625rem 0 0;
+}
+
+.N6ORGuTu99IemWyAtoUc {
+  margin: 0;
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  color: #ACB8BF;
+  text-transform: uppercase;
+}
+
+.MdpLdPwB148wqqiPKYFc {
+  padding: 0.25rem 0 0.938rem 0;
+  font-size: 0.71rem;
+  color: #303030;
+  color-padding: 0.25rem 0 0;
+}
+
+.hMZPRBiPu47PnDfqxCp0 {
+  padding: 0 0.2rem;
+  color: #22BF86;
+}
+
+.nKxJSL0f1fMV0F4gUOzD {
+  padding: 0 5.2rem 0 0;
+}
+
+.VaD_AWidPlz7LulQ2VaV {
+  font-size: 0.625rem;
+  letter-spacing: 1.2px;
+  color: #707B8C;
+}
+
+.c1g2m1Wq1Z66uvgjtQ0J {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.WnRyX4AT5XyMNMBIQG0S {
+  font-size: 1.438rem;
+  color: #22BF86;
+}
+
+.cSJpMnG2fCLJadED_Stl {
+  padding: 0 0 0 0.35rem;
+  color: #303030;
+}
+
+.Ma9fuOXLb1aVtgfuTpXy {
+  font-size: 0.71rem;
+  color: #303030;
+  padding: 0.25rem 0 0;
+}
+
+.FPR27iHEfVXqiOgGlZFg {
+  padding: 0.938rem 2.375rem;
+  border: 1px solid;
+  border-radius: 8px;
+  background: transparent linear-gradient(252deg, #11998E 0%, #38EF7D 100%) 0% 0% no-repeat padding-box;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./node_modules/normalize.css/normalize.css ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/normalize.css/normalize.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
