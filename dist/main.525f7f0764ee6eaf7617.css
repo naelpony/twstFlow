@@ -15,11 +15,25 @@
   box-shadow: 0px 6px 32px rgba(14, 42, 96, 0.1607843137);
 }
 
+.YyRYbr2oQQQFuSyZsiDk {
+  border: 1px solid black;
+}
+.YyRYbr2oQQQFuSyZsiDk:active {
+  outline: none !important;
+  border: none !important;
+}
+.YyRYbr2oQQQFuSyZsiDk:focus {
+  outline: none !important;
+  border: none !important;
+}
+
 .bu3VwXcFJJvCukPI4ls9 {
-  width: 75%;
+  width: 100%;
   height: 190px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .zGn40mkSsLBHDzvDzhkU {
@@ -70,7 +84,6 @@
   padding: 0.25rem 0 0.938rem 0;
   font-size: 0.71rem;
   color: #303030;
-  color-padding: 0.25rem 0 0;
 }
 
 .hMZPRBiPu47PnDfqxCp0 {
@@ -119,6 +132,46 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/components/stylemodule/list.module.sass ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  font-size: 20px;
+}
+
+.qK2m7grvbr2oaOwy02tP {
+  margin: 1rem 0;
+}
+
+.UUSXZQQzcQFFynGTon72 {
+  padding: 0.8rem 0 0.8rem 0.5rem;
+  background-color: #35373A;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 0.813rem;
+  letter-spacing: 0.16px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  width: 20%;
+  height: 270%;
+}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/style.sass ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/Roboto-Regular.fc2b5060f7accec5cf74..ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+:root:active {
+  outline: none !important;
+}
+:root:focus {
+  outline: none !important;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./node_modules/normalize.css/normalize.css ***!

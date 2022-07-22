@@ -10,18 +10,20 @@ function Listitems({ erorrs, options, value, onChange }) {
 		return <p>Error</p>
 	} else {
 		return (
-			<select className={style.select}
-				value={value}
-				onChange={e => onChange(e.target.value)}
-			>
-				<option disabled value="">Марка</option>
-				<option value="">Все</option>
-				{options.map((models) =>
-					<option className={style.option} key={models} value={models}>
-						{models}
-					</option>
-				)}
-			</select>
+			<div className={style.container}>
+				<select className={style.select}
+					value={value}
+					onChange={e => onChange(e.target.value)}
+				>
+					<option disabled value="">Марка</option>
+					<option value="">Все</option>
+					{options.map((models) =>
+						<option className={style.option} key={models} value={models}>
+							{models}
+						</option>
+					)}
+				</select>
+			</div>
 		)
 	}
 }
